@@ -1,0 +1,643 @@
+
+/* fonts ========================*/
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('google-fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf');
+}
+@font-face {
+    font-family: 'Redressed';
+    src: url('google-fonts/Redressed/Redressed-Regular.ttf');
+}
+@font-face {
+    font-family: 'SyneTactile';
+    src: url('google-fonts/Syne_Tactile/SyneTactile-Regular.ttf');
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url('images/back-table-2.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: bottom;
+}
+
+img{
+    height: 100%;
+}
+
+img.land{
+    display: block;
+}
+
+img.mobile{
+    display: none;
+}
+
+#header{
+    width: 100%;
+
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0 0 15px 5px black;
+
+    height: 80px;
+    box-sizing: border-box;
+    color: white;
+
+    display: flex;
+    padding-top: 10px;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+#header .left h1{
+    display: inline;
+    font-size: 50px;
+    font-family: 'SyneTactile';
+    text-transform: uppercase;
+}
+
+#header .left h1.abbr-name{
+    display: none;
+}
+
+#header .left i.fas.fa-crow{
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+#header .right a{
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}
+
+#header .right a:hover{
+    color: gold;
+}
+
+#header .right a i{
+    font-size: 15px;
+}
+
+#header .right a p{
+    font-size: 16px;
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* content ====================================*/
+
+.content{
+    width: 100%;
+    margin: 0;
+
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.content .item-box{
+    width: 45%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: 10px 0;
+}
+
+.content a.item{
+    margin: 30px 0;
+    width: 100%;
+    height: 100%;
+    border: 6px solid rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px 6px rgba(0,0,0,0.8);
+    
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .item:hover h2{
+    /* border-color: white; */
+    color: white;
+    transform: scale(1.05);
+    transition-duration: 1000ms;
+}
+
+.content a.item h2{
+    font-family: 'Redressed', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* .content .item-box .item img.mobile,
+.content .item-description .item-image img.mobile{
+    display: none;
+} */
+
+/* item page ============================== */
+
+.item-description{
+    background-color: rgba(0,0,0,0.8);
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.item-description h1, .item-description h2, .item-description h3{
+    font-family: 'SyneTactile', sans-serif;
+}
+
+.item-description h1{
+    font-size: 60px;
+}
+
+.item-description h2{
+    font-size: 40px;
+}
+
+.item-description h3{
+    font-size: 25px;
+}
+
+.item-description td{
+    font-family: 'Redressed', sans-serif;
+    font-size: 30px;
+}
+
+.item-description .item-image{
+    width: 60%;
+}
+
+.item-description .item-image img{
+    width: 100%;
+    margin: 10px;
+}
+
+.item-description .item-summary{
+    width: 30%;
+    margin: 20px;
+
+}
+
+.item-description .item-summary table{
+    width: 80%;
+}
+
+.item-description .item-summary table td{
+    margin: 0 30px;
+    border-bottom: 2px dashed white;
+}
+
+.item-description .right-to-left{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.item-description .item-write-up{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    width: 35%;
+    font-size: 24px;
+    font-family: 'Open Sans Condensed', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.item-description .selection{
+    display: block;
+}
+
+.item-description form{
+    display: block;
+    padding: 20px;
+    width: 50%;
+    /* margin: 0 20px; */
+    margin-right: 30px;
+}
+
+.item-description form table{
+    width: 100%;
+    margin: 20px 0;
+    font-size: 24px;
+    /* padding-left: 20px; */
+}
+
+.item-description form table tr{
+    padding: 10px 0;
+}
+
+.item-description form table td{
+    padding: 0;
+}
+
+.item-description form textarea{
+    width: 80%;
+    height: 160px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.item-description form input[type='submit']{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(233, 2, 2);
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.item-description form input[type='submit']:hover{
+    border: 2px solid black;
+}
+
+form#contact{
+    width: 90%;
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
+    font-family: 'Open Sans Condensed';
+    text-align: center;
+}
+
+form#contact input{
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+form#contact input[type="number"], form#contact input[type="date"]{
+    width: 10%;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+form#contact input[type="date"]{
+    width: 12%;
+    margin-bottom: 25px;
+}
+
+form#contact label{
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+form#contact textarea{
+    width: 30%;
+    height: 80px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+form#contact input[type="submit"]{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: 'Open Sans Condensed';
+    font-weight: 700;
+    border-radius: 7px;
+    background-color: rgb(233, 2, 2);
+    color: white
+}
+
+form#contact input[type="submit"]:hover{
+    background-color: red;
+}
+
+
+/* End Thank you page ============================*/
+.item-description.end{
+    display: block;
+    padding: 40px;
+    text-align: center;
+}
+
+/* .item-description.end .end-image img.land{
+    display: block;
+}
+.item-description.end .end-image img.mobile{
+    display: none;
+} */
+
+.item-description.end .end-image img{
+    width: 60%;
+    margin: auto;
+}
+
+.item-description.end .end-message{
+    display: block;
+}
+
+.item-description.end .end-message p{
+    font-size: 40px;
+    font-family: 'SyneTactile', sans-serif;
+}
+
+.item-description.end h4{
+    font-family: 'Open Sans Condensed';
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+
+/* footer ============================== */
+
+#footer{
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0 0 15px 5px black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer p{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* mobile view ==================================== */
+
+#nav_bar ul{
+    list-style-type: none;
+    /* background-color: black; */
+}
+
+#nav_bar ul li{
+    display: inline;
+}
+
+.menu-button{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+}
+
+.item-box a.item .text-overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    width: 40%;
+    margin-left: 24px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.4);
+}
+
+
+/* media queries ==================================== */
+
+@media screen and (max-width: 1000px){
+
+
+    #header .right .link p{
+        display: none;
+    } /* hide text only; show icons*/
+
+    #header .right a i{
+        font-size: 20px;
+    }
+    
+    
+    @media screen and (max-width: 800px){
+
+
+        /* hidden menu ================================*/
+        .menu-button{
+            display: block;
+        }
+        a.menu-button#show-nav i.fas.fa-bars{
+            font-size: 40px;
+        }
+    
+        #nav_bar{display:none;}
+
+        .with_nav #nav_bar{display: block;}
+    
+        #nav_bar{
+            position: absolute;
+            top: 65px;
+            right: 0px;
+            z-index: 500;
+            background-color: rgba(0,0,0,0.8);
+            box-shadow: 0 0 10px 5px black;
+        }
+        
+        #nav_bar ul{
+            padding: 0;
+        }
+
+        #nav_bar ul li{
+            display: block;
+            padding: 5px;
+        }
+
+        #header .right .link p{
+            display: inline;
+            padding: 0 5px;
+        }
+        /* end hidden menu ========================*/
+
+        #header{
+            justify-content: left;
+            padding-left: 20px;
+            height: 65px;
+        }
+
+        #header .left h1.abbr-name{
+            display: inline;
+        }
+
+        #header .left h1.full-name{
+            display: none;
+        }
+
+        #header .left h1{
+            font-size: 40px;
+        }
+
+        #header .left i.fas.fa-times{
+            font-size: 40px;
+            padding-right: 10px;
+        }
+
+        .content .item-box{
+            padding: 10px 20px;
+            width: 100%;
+            height: 300px;
+        }
+
+        .content a.item h2{
+            font-size: 30px;
+            color: white;
+        }
+
+        .item-box a.item .text-overlay{
+            padding: 30px 30px 30px 0;
+            border-radius: 100px;
+            /* background: none;
+            box-shadow: none; */
+        }
+
+        /* change to mobile images */
+        img.land{
+            display: none;
+        }
+        img.mobile{
+            display: block;
+        }
+        
+        /* item-description page */
+
+        .item-description{
+            width: 100%;
+            text-align: center;
+            margin-top: -30px;
+            margin-bottom: 0px;
+        }
+        
+        .item-description h1{
+            font-size: 40px;
+        }
+        
+        .item-description h2{
+            font-size: 30px;
+        }
+        
+        .item-description h3{
+            font-size: 20px;
+        }
+        
+        .item-description td{
+            font-size: 20px;
+        }
+
+        .item-description .item-image{
+            width: 100%;
+        }
+        
+        .item-description .item-image img{
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .item-description .item-summary{
+            width: 100%;
+        }
+
+        .item-description .item-summary table{
+            width: 100%;
+        }
+        
+        .item-description .right-to-left{
+            display: block;
+        }
+
+        .item-description .item-write-up{
+            width: 100%;
+        }
+        
+        .item-description form{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .item-description form table{
+            padding: 0;
+            border: 0;
+        }
+
+        .item-description form table td{
+            display: block;
+            padding: 10px 0;
+        }
+
+        .item-description form table h2{
+            background-color: black;
+            color: white;
+        }
+
+        .item-description .item-write-up{
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .item-description.end .end-image img{
+            width: 100%;
+        }
+
+        /* contact form */
+        form#contact{
+            box-sizing: border-box;
+        }
+
+        form#contact input{
+            width: 90%;
+        }
+
+        form#contact input[type="number"]{
+            width: 30%;
+        }
+
+        form#contact input[type="date"]{
+            width: 50%;
+        }
+
+        form#contact textarea{
+            width: 90%;
+            font-size: 16px;
+        }
+
+
+    }
+
+}
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #main_nav{
+                display:none;
+            }
+            .with_nav #main_nav{
+                display: block;
+            }
+        </style>
+
+    </head>
+    <body id="body">
+        <p>
+            <a 
+                href="#main_nav" 
+                id="access_nav" 
+                class="access_aid"
+            >
+                navigation
+            </a>
+        </p>
+
+        <article>tegsidgiasfiuagwi
+            ejahweifhaiuhfiusahd
+            asidfhuahufha
+            ishfiuaheriufheaiurhi
+        </article>
+
+        <nav id="main_nav">
+            <ul>
+                <li><a href="">this</a></li>
+                <li><a href="">that</a></li>
+                <li><a href="">other</a></li>
+            </ul>
+            <p>
+                <a 
+                    href="body" 
+                    id="access_top"
+                    class="access_aid"
+                >
+                skip to top
+                </a>
+            </p>
+        </nav>
+
+        <script>
+            var nav = document.getElementById('access_nav'),
+            body = document.body;
+
+            nav.addEventListener('click',
+            function(e){
+                body.className = body.className? '':'with_nav';
+                e.preventDefault();
+            }
+            );
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontAwesome/css/all.css">
+        
+        <title>The Crow's Nest</title>
+    </head>
+
+    <body>
+        <div id="header">
+
+            <div class="left">
+                <i class="fas fa-crow"></i>
+                <h1 class="full-name">The Crow's Nest</h1>
+                <h1 class="abbr-name">TCN</h1>
+            </div>
+
+            <div class="right" id="menu">
+
+                <a href="#nav_bar" id="show-nav" class="menu-button">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <nav id="nav_bar">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="link">
+                                <i class="fas fa-home"></i>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="display_message()" class="link">
+                                <i class="fas fa-utensils"></i>
+                                <p>Menu</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="link">
+                                <i class="fas fa-book"></i>
+                                <p>Book</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="display_message('7')" class="link">
+                                <i class="fas fa-calendar"></i>
+                                <p>Events</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="display_message('8')" class="link">
+                                <i class="fas fa-address-card"></i>
+                                <p>About</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chef.html" class="link">
+                                <i class="fas fa-user"></i>
+                                <p>The Chef</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://rishaadrajak-itvarsity.github.io/Module-3-Assessment-1/index.html" class="link">
+                                <i class="fas fa-book-reader"></i>
+                                <p>Recipe</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="display_message('8')" class="link">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Find Us</p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="item-box">
+                <a class="item" href="starters.html">
+                    <img class="land" src="images/starter/starter.jpg">
+                    <img class="mobile" src="images/starter/starter-mobile.jpg">
+                    <div class="text-overlay">
+                        <h2>Starters</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item-box">
+                <a class="item" href="meals.html">
+                    <img class="land" src="images/meal/meal.jpg">
+                    <img class="mobile" src="images/meal/meal-mobile.jpg">
+                    <div class="text-overlay">
+                        <h2>Meals</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item-box">
+                <a class="item" href="desserts.html">
+                    <img class="land" src="images/dessert/back-dessert.jpg">
+                    <img class="mobile" src="images/dessert/back-dessert-mobile.jpg">
+                    <div class="text-overlay">
+                        <h2>Desserts</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item-box">
+                <a class="item" href="drinks.html">
+                    <img class="land" src="images/drinks/back-drinks.jpg">
+                    <img class="mobile" src="images/drinks/back-drinks-mobile.jpg">
+                    <div class="text-overlay">
+                        <h2>Drinks</h2>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <form id="contact">
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Enter Name">
+            <input type="text" placeholder="Enter Phone Number">
+            <input type="email" placeholder="Enter Email">
+            <br>
+            <label>Seating</label>
+            <input type="number">
+            <br>
+            <label>Date</label>
+            <input type="date">
+            <br>
+            <textarea placeholder="Type requests, messages and comments here"></textarea>
+            <input type="submit" value="Send Request" onclick="display_message('2')">
+        </form>
+
+        <div id="footer">
+            <p>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-discord"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
+            </p>
+            <p><del>&#169;</del> 2022 No Copyright</p>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+        
+    </body>
+
+</html>
